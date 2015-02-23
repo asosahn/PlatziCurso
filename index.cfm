@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FrontPlatzi</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <div class="topbar background-gray">
+		<nav>
+			<ul>
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Contactos</a></li>
+				<li><a href="">Deportes</a></li>
+				<li><a href="">Sucesos</a></li>
+			</ul>
+		</nav>
+	 	 <ul>
+		 	<li><a href=""></a>Login</li>
+		 	<li><a href=""></a>Register</li>
+		 	<li><a href=""></a>Contact</li>
+		 </ul>
+ </div>
+
+<header>
+	<h1>Front Platzi</h1>
+	<h2 class="h1">Subtitulo</h2>
+</header>
+
+<section>
+	<header></header>
+	<article>
+		<header>
+			<h3 class="article-header">Titulo Articulo</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cumque nam facere officiis ullam nisi veritatis ipsam, quisquam debitis laudantium distinctio odit, tempora cum perferendis pariatur porro aliquid beatae ut!</p>
+		</header>
+		<aside>
+			Redes Sociales
+		</aside>
+	</article>
+</section>
+<footer>
+	
+</footer>
+</body>
+</html>
+
