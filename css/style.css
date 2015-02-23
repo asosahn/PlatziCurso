@@ -53,3 +53,13 @@ input[type="email"]:focus:invalid{
 	background-color: red;
 }
 
+.toggle:checked ~ .checked {
+	background-color: olive;
+}
+/*con el simbolo mas (+) solo el primero */
+.checked {
+	width: 100px;
+	height: 100px;
+	background-color: peru;
+}
+
