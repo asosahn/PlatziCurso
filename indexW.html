@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Weather</title>
+    <link rel="stylesheet" href="css/weather.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Ovo|Megrim|Fao' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header class="main-header">
+    <h1>Platziweather</h1>
+    <h2>An Awesome way to see how we burn by global warming</h2>
+</header>
+<!-- <form action="" class="search">
+    <input type="text" class="search__text">
+    <input type="submit" class="search__btn btn">
+</form> -->
+
+<main class="cards-group">
+ <template id="template--city">
+   <div class="card">
+        <header class="card__header">
+            <h3 class="card__title"></h3>
+            <h4 class="card__date"></h4>
+        </header>
+        <div class="card__info">
+            <!-- <img src="http://openweathermap.org/img/w/02d.png" alt="" class="card__image"> -->
+            <span class="card__maxt">º</span>
+            <span class="card__mint">º</span>
+            <span class="card__temp">º</span>
+        </div>
+    </div>
+  </template>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/min/weather-min.js"></script>
+</body>
+</html>

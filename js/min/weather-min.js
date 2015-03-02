@@ -1,0 +1,1 @@
+!function(){function o(o){alert("Ocurrio un error: "+o)}function n(o){var n=o.coords.latitude,a=o.coords.longitude;console.log("La posición es: "+n+","+a)}navigator.geolocation?navigator.geolocation.getCurrentPosition(n,o):alert("Tu no tienes un navegador avanzado")}();

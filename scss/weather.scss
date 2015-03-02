@@ -1,0 +1,225 @@
+@import "flex.scss";
+@mixin box-sizing {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+$padding_var : 0.4em;
+html{
+	font-family: 'Ovo','Sanchez', serif;
+	font-size: 80%;
+
+}
+
+@media all and (min-width: 400px){
+	html{
+		font-size: 120%;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio:2), (min-resolution: 192dpi){
+	html{
+		font-size: 120%;
+	}
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #EEE;
+}
+
+.main-header{
+	text-align: center;
+	background-color: #16210b;
+/*	filter: alpha(opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+   opacity:0.9;
+   -moz-opacity: 0.90; */
+    /*zoom: 1.5;*/
+	color: white;
+	padding: 4em;
+}
+
+	.main-header h1 {
+		margin: 0;
+		/*word-wrap: break-all;*/
+
+	}
+
+	.main-header h2 {
+		font-size: 1rem;
+		font-weight: normal;
+	}
+
+	@media screen and (min-width: 500px){
+		html{
+		font-size: 150%;
+	}
+		/*.main-header {
+			background-color: olive;
+		}*/
+
+	
+	}
+
+/*	@media screen and (orientation: landscape){
+		.main-header {
+			background-color: olive;
+		}
+	}*/
+  
+.card{
+	position: relative;
+	height: 30vh;
+	width: 100%;
+	background-image: url(../img/valencia.jpg);
+    background-size: cover;
+	color: white;
+	padding: $padding_var;
+	margin-bottom: .2em;
+	
+	font-family: 'Tao', cursive;
+	@include box-sizing;
+	@include flexbox;
+	@include justify-content(space-around);
+
+}
+
+.card::before{
+content: "";
+background-color: rgba(0,0,0,0.4);
+display: block;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+
+
+
+
+}
+	.card__title{
+		margin: 0;
+		text-align: center;
+		text-shadow: 2px 2px black;
+		font-size: 2rem;
+		
+		position: relative;
+	}
+
+	.card__date {
+		font-size: 0.7rem;
+		text-align: center;
+		margin: 0;
+		text-shadow: 2px 2px black;
+		position: relative;
+	}
+
+@media all and (min-width: 600px) { /*28em*/
+	.card{
+		height: 70vh;
+		width: 100%;
+		background-image: url(../img/valencia.jpg);
+		
+		background-size: cover;
+		/*background-position: center;*/
+		background-repeat: no-repeat;
+		
+		
+	}
+}
+
+	.card__info {
+		position: absolute;
+		
+		bottom: 1.2em;
+		/*left: 50vw;*/
+		left: 1em;
+		top: 5em;
+		text-align: center;
+		background-color: rgba(0,0,0,0.8);
+		font-size: 0.8em;
+		width: 30%;
+		height: 50%;
+		padding: 0.4em;
+		border-radius: 10px;
+		
+
+
+	}
+
+	@media all and (min-width: 600px) { /*28em*/
+		.card__info {
+			top: 2.5em;
+			height: 62%;
+		}
+	}
+
+	.card__image {
+		display: block;
+		/*margin: 0 auto;*/
+		
+		width: 20%;
+
+	}
+
+
+
+	.card__temp {
+		display: block;
+		font-size: 3rem;
+		text-shadow: 2px 2px black;
+		line-height: 1.5;
+
+	}
+
+	@media all and (min-width: 600px) { 
+		.card__temp {
+			/*line-height: 1.5;*/
+			font-size: 5rem;
+
+		}
+
+		.card__info {
+			font-size: 2em;
+		}
+	}
+
+	.card__maxt::before{
+		content: "Max: "
+	}
+
+	.card__mint::before{
+		content: "Min: "
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

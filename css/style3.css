@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.weather-card{
+	background-color: #80EAE8;
+	padding: .5em;
+	margin-top: 10px;
+}
+
+	.weather-card__header{
+		margin: 0;
+
+	}
+
+	.weather-card__date{
+		font-weight: normal;
+		font-size: 12px;
+		font-family: courier;
+		margin: 0 0 0.5em 0;
+		border-bottom: 1px solid #D380EA;
+		display: block;
+	}
+
+	.weather-card__footer{
+		margin:0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+.tempeture::after{
+	content: attr(data-unidad);
+	font-size: 12px;
+	font-family: courier;
+	/*position: absolute;*/
+}		
+
+
+.centrar {
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+}
