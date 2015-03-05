@@ -16,24 +16,33 @@
     <input type="text" class="search__text">
     <input type="submit" class="search__btn btn">
 </form> -->
-
+<div class="loader">Localizando tu Posición, Espere.....</div>
+<form action="" class="search">
+<input data-input="cityAdd" type="text" class="search__test" placeholder="Agregar Ciudad">
+<input type="submit" data-button="add" class="large button green" value="Añadir Ciudad">   
+<button data-button="cities" class="large button green">Ver Ciudades</button> 
+</form>
 <main class="cards-group">
  <template id="template--city">
    <div class="card">
         <header class="card__header">
-            <h3 class="card__title"></h3>
-            <h4 class="card__date"></h4>
+            <h3 data-city id="" class="card__title"></h3>
+            <h4 data-time class="card__date"></h4>
         </header>
         <div class="card__info">
-            <!-- <img src="http://openweathermap.org/img/w/02d.png" alt="" class="card__image"> -->
-            <span class="card__maxt">º</span>
-            <span class="card__mint">º</span>
-            <span class="card__temp">º</span>
+            <img data-icon src="" alt="" class="card__image"> 
+            <span data-temp="max" class="card__maxt">º</span>
+            <span data-temp="min" class="card__mint">º</span>
+            <span data-temp="current" class="card__temp">º</span>
         </div>
     </div>
   </template>
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="js/min/weather-min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="js/date.js"></script>
+<script src="js/weather.js"></script>
+<!-- <script src="js/min/weather-min.js"></script> -->
+
 </body>
 </html>
